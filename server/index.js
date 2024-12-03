@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // React frontend URL
+    origin: "https://meena-ladies-client.onrender.com", // React frontend URL
     credentials: true, // Allow credentials like cookies
     optionsSuccessStatus: 200,
   })
@@ -75,5 +75,5 @@ app.post("/api/save-purchase", async (req, res) => {
 // Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
