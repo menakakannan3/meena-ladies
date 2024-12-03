@@ -1,20 +1,2 @@
-# Node.js dependencies
-node_modules/
-
 # Environment files
 .env
-
-# Logs
-logs/
-*.log
-
-# Build files
-build/
-dist/
-
-# OS-specific files
-.DS_Store
-
-# IDE-specific files
-.vscode/
-*.iml
