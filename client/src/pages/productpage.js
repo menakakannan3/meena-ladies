@@ -51,7 +51,7 @@ const ProductPage = () => {
   
     if (isLoggedIn && username) {
       try {
-        const response = await fetch("https://meena-ladies-server.onrender/api/save-purchase.com", {
+        const response = await fetch("https://meena-ladies-server.onrender.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
