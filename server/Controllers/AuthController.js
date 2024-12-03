@@ -1,6 +1,7 @@
 const User = require("../models/UserModel");
 
-const bcrypt = require("bcrypt"); // Import bcrypt
+const bcrypt = require('bcryptjs');
+
 
 const signUp = async (req, res) => {
   try {
