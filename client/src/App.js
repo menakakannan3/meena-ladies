@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/" element={<BestSelling />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/login" element={<Login/>}/>
-          <Route path="/Signin" element={<SignIn/>}/>
+          <Route path="/signin" element={<SignIn />} />
           <Route path="/" element={<Home />} />
         
         </Routes>
