@@ -27,7 +27,7 @@ export default function SignIn() {
     setError(null);
 
     try {
-      const response = await fetch("https://meena-ladies-server.onrender/signin.com", {
+      const response = await fetch("https://meena-ladies-server.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
