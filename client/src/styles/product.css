@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fddde6;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #5e2453;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #5e2453;
+  margin: 10px auto 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 45px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #5e2453;
+  margin: 15px 0;
+}
+
+.card .newbtn {
+  background-color: #5e2453;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card .newbtn:hover {
+  background-color: #3e1836;
+}
+
+.coverpic {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+    gap: 15px; /* Reduce spacing between cards */
+  }
+
+  .card {
+    width: 90%; /* Adjust card width for smaller screens */
+  }
+
+  .coverpic {
+    width: 100%; /* Ensure images take the full card width */
+  }
+}

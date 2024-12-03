@@ -1,0 +1,66 @@
+/* General container styling */
+.signin-container {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  }
+  
+  /* Box styling */
+  .signin-box {
+    background-color: rgba(128, 0, 128, 0.8); /* Purple background with transparency */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* Header and text */
+  .signin-box h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .signin-box p {
+    color: #f0e4ff;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Input fields */
+  .signin-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styling */
+  .signin-button {
+    background-color: #ffc0cb; /* Light pink button */
+    border: none;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .signin-button:hover {
+    background-color: #ff9db5; /* Slightly darker pink on hover */
+  }
+  

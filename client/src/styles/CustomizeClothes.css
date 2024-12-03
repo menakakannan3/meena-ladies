@@ -1,0 +1,116 @@
+/* Basic styling for the container and layout */
+.enter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffe4e9; /* Light pink background */
+}
+
+.customize-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; /* White background for the container */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 80%; /* Responsive width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.customize-image {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.customize-text {
+  flex: 1;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.customize-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.customize-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.connect-button {
+  display: inline-block;
+  background-color: #6a1b9a; /* Purple button */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.connect-button:hover {
+  background-color: #4a0072; /* Darker purple on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .customize-container {
+    flex-direction: column; /* Stack image and text vertically */
+    height: 100%;
+    padding-top: 60px;
+    width: 50%; /* Make container width smaller on mobile */
+  }
+
+  .customize-image {
+    max-width: 80%; /* Reduce image size on small screens */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .customize-text {
+    padding-left: 0; /* Remove left padding on smaller screens */
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  .customize-text h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .customize-text p {
+    font-size: 1rem; /* Reduce paragraph font size */
+  }
+
+  .connect-button {
+    width: 100%; /* Make button full-width on smaller screens */
+    padding: 12px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens (e.g., mobile phones) */
+  .customize-container {
+    padding: 15px; /* Reduce padding further */
+  }
+
+  .customize-text h1 {
+    font-size: 1.6rem; /* Further reduce the font size */
+  }
+
+  .customize-text p {
+    font-size: 0.9rem; /* Further reduce paragraph font size */
+  }
+
+  .connect-button {
+    font-size: 0.9rem; /* Slightly reduce button text size */
+    padding: 10px; /* Adjust button padding */
+  }
+}
