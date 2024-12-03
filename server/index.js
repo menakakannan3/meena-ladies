@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://meena-ladies-client.onrender.com", // React frontend URL
+    origin: "https://meena-ladies-client.onrender.com/", // React frontend URL
     credentials: true, // Allow credentials like cookies
     optionsSuccessStatus: 200,
   })
