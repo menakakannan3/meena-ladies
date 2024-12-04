@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use("/api", userRoutes);
 
 // MongoDB Connection
-const mongoUri = process.env.MONGO_URL;
+const mongoUri = "mongodb+srv://menakakannan3:Kannan@cluster0.jtgxs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 if (!mongoUri) {
   console.error("Error: MONGO_URL is not defined in the .env file.");
